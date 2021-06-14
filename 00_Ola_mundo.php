@@ -1,12 +1,20 @@
 <?php
 /**
  * @param comentarios com variaveis
- * 
+ * @param utilizando funções de string;
  */
-echo "Ola estou testando meu codigo";
-echo "Ola Mundo";
-echo "Nova alteração do meu codigo ------------ atualizando tudo";
-echo "essa e uma nova alteração";
+function texto():string {
+echo strtoupper("Ola estou testando meu codigo");
+echo strtolower("Ola Mundo");
+echo ucwords("Nova alteração do meu codigo ------------ atualizando tudo");
+echo ucfirst("essa e uma nova alteração");
+}
+/*
+*@param chamado o metodo:
+*/
+echo "Esse o pedaço de texto".texto()."<br>";
+echo "<br>"
+// Fim do Codigo.  
 
-// traduzindo o projeto;
+
 ?>
