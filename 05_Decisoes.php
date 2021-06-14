@@ -5,7 +5,7 @@
 $idade = 21;
 $nome = "Andre Santos";
 
-echo "Você pode entrar caso você tenha 18 anos? <br>";
+echo ucwords("Você pode entrar caso você tenha 18 anos? <br>");
 echo "<br>";
 echo "você tem ".$idade."anos. Pode entrar <br>";
 echo "<br>";
