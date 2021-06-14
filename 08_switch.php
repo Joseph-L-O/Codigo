@@ -1,6 +1,8 @@
 <?php
 /**
- * @param Exemplo de caso com switch */   
+ * @param Exemplo de caso com switch */ 
+
+// variaveis:
     $coisas = 2;
  class meu_exemplo {
 
@@ -21,14 +23,14 @@
         break;
 
         default:
-        echo "Nenhuma das opções e Valida, por favor revise suas opções \n";
+        echo ucwords("Nenhuma das opções e Valida, por favor revise suas opções \n");
         break;
     }
 }
 
 
 }
-echo " Estou chamando a minha Função de Switch: <br>";
+echo ucwords(" Estou chamando a minha Função de Switch: <br>");
 echo "<br>";
 echo caso();
 echo "<br>";
