@@ -12,6 +12,7 @@ class Conta {
    
   /**
    * @param Adicionando um Construtor();
+   * @param inicializando o Construtor;
    */
   public function __construct(string $cpfdoTitular, string $nomedoTitular)
   {
@@ -21,6 +22,8 @@ class Conta {
     $this->nomeTitular = $nomedoTitular;
     $this->numerodecontas++;
   }
+
+
   /**
    * @param Setando todos os Metodos
    */
