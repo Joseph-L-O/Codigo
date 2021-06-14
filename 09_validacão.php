@@ -18,9 +18,5 @@ if(isset($nome)){
 else{
     echo ucwords("A variavel não existe <br>");
 }
-
 exit;
-
-
-
 ?>
