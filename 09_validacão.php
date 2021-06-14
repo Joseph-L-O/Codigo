@@ -1,6 +1,7 @@
 <?php
-// validações de variaveis em php:
-
+/*
+*@param  Validações de Variaveis em PHP:
+*/
 
 //detroi uma variavel:
 //unset();
@@ -11,11 +12,11 @@ $nome = strtoupper("Andre panizza dos santos");
 unset($nome);
 
 if(isset($nome)){
-    echo " A variavel com o meu { $nome } ";
+    echo ucwords(" A variavel com o meu { $nome } ");
 
 }
 else{
-    echo "A variavel não existe <br>";
+    echo ucwords("A variavel não existe <br>");
 }
 
 exit;
