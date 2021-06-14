@@ -4,9 +4,12 @@
  */
 
 $idade = 21;
-// exbindo na tela o valor da variavel:
-
-echo "A idade e de " . $idade . "<br>";
+/*
+* @param  Funções de Texto: 
+*/
+echo ucwords("Declaração da variavel:");
+echo strtoupper("A idade e de: ") . $idade . "<br>";
+echo ucwords("Fim do arquivo de Frase")."<br>";
 echo "<br>";
 
 
