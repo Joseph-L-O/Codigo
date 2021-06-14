@@ -40,3 +40,19 @@ public function __Construct(string $cidade, string $bairro , string $rua , strin
         return $this->numero;
     }
 }
+
+class Conta {
+    private $saldo;
+    private $cpfTitular;
+    private $nomeTitular;
+    public static $numerodecontas;
+
+    public function __Construct(string $cpfdoTitular, string $nomedoTitular)
+    {
+        $this->saldo = 0;
+        $this->cpfTitular = $cpfdoTitular;
+        $this->nomeTitular = $nomedoTitular;
+        $this->numerodecontas++;
+
+    }
+}
