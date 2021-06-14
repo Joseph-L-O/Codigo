@@ -72,6 +72,37 @@ class Conta{
     {
         return $this->nomeTitular;
     }
+    public function sacar(float $valorAsacar):float 
+    {
+        if($valorAsacar > $this->saldo)
+        {
+            throw New Exception("Não e Possivel Sacar o valor!!");
+        }else if($valorAsacar == 0)
+        {
+            throw New Exception("O valor a Sacar não pode ser o Numero 0");
+        }else{
+            $valorAsacar -=$this->saldo;
+        }
+    }
+    public function depositar(float $deposito):float 
+    {
+        if($deposito == 0)
+        {
+            throw New Exception("O deposito Precisa possuir um valor e não podera ser zero!!");
+
+        }else if($deposito < 0 )
+        {
+            throw New Exception("O Numero Preisa ser Positivo!!");
+
+        }else{
+            $deposito += $this->saldo;
+        }
+        public function transferir():string
+        
+    }
+
+
+
 
     public static function validarnome(string $nomedoTitular):string
     {
