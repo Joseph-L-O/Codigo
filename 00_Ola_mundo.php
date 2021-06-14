@@ -13,8 +13,5 @@ echo ucfirst("essa e uma nova alteração");
 *@param chamado o metodo:
 */
 echo "Esse o pedaço de texto".texto()."<br>";
-echo "<br>"
-// Fim do Codigo.  
-
-
+echo "<br>";
 ?>
