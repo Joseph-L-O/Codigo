@@ -1,17 +1,18 @@
 <?php
-/*
-*@param setando classe Conta:
-*#param adicionando os metodos
-*/
+/**
+ * @param Criação das classes Conta, e Endereco;
+ * @param Validar nome e um metodo statico
+ * @param $numerodecontase um atributo Estatico;
+ */
 class Conta {
   private $saldo;
   private $cpfTitular;
   private $nomeTitular;
   public static $numerodecontas;
    
-  /*
-  *@param adicionando o construtor;
-  */
+  /**
+   * @param Adicionando um Construtor();
+   */
   public function __construct(string $cpfdoTitular, string $nomedoTitular)
   {
     $this->saldo = 0;
@@ -20,9 +21,9 @@ class Conta {
     $this->nomeTitular = $nomedoTitular;
     $this->numerodecontas++;
   }
-  /*
-  *@param setando todos os Metodos:
-  */
+  /**
+   * @param Setando todos os Metodos
+   */
   public function recuperasaldo():float
     {
         return $this->saldo;
@@ -83,18 +84,17 @@ class Conta {
     }
 }    
 
-/*
-*@param setando uma classe nova Endereco, com os respectivos atributos;
-*@param atribuindo valores atribuição;
-*/
+/**
+ *@param Setando uma Nova Classe
+ */
 class Endereco {
   private $cidade;
   private $bairro;
   private $rua;
   private $numero;
-  /*
-  *@param setando um construtor para inicialização;
-  */  
+  /**
+   * @param Construtor Inicializado;
+   */
   public function __construct(string $cidade , string $bairro , string $rua , string $numero){
     $this->cidade = $cidade;
     $this->bairro = $bairro;
