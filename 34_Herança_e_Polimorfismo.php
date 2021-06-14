@@ -20,22 +20,22 @@ public function __Construct(string $cidade, string $bairro , string $rua , strin
     $this->numero = $numero;
     }
     
-    public function recuperarcidade():string 
+    public function recuperarCidade():string 
     {
         return $this->cidade;
     }
     
-    public function recuperarbairro():string 
+    public function recuperarBairro():string 
     {
         return $this->bairro;
     }
    
-    public function recuperarrua():string 
+    public function recuperarRua():string 
     {
         return $this->rua;
     }
     
-    public function recuperarnumero():string 
+    public function recuperarNumero():string 
     {
         return $this->numero;
     }
@@ -45,30 +45,30 @@ class Conta{
     private $saldo;
     private $cpfTitular;
     private $nomeTitular;
-    public static $numerodecontas;
+    public static $numerodeCcontas;
 
     public function __Construct(string $cpfdoTitular, string $nomedoTitular)
     {
         $this->saldo = 0;
         $this->cpfTitular = $cpfdoTitular;
-        self::validanome($nomedoTitular);
+        self::validaNome($nomedoTitular);
         $this->nomeTitular = $nomedoTitular;
-        $this->numerodecontas++;
+        $this->numerodeContas++;
 
     }
     /**
-     * @param Metodos da classe conta:
+     *@param Metodos da classe conta:
      */
 
-    public function recuperasaldo():float
+    public function recuperaSaldo():float
     {
         return $this->saldo;
     }
-    public function recuperacpf():float 
+    public function recuperaCpf():float 
     {
         return $this->cpfTitular;
     }
-    public function recuperanome():float 
+    public function recuperaNome():float 
     {
         return $this->nomeTitular;
     }
@@ -84,7 +84,7 @@ class Conta{
             $valorAsacar -=$this->saldo;
         }
     }
-    public function depositar(float $deposito):float 
+    public function Depositar(float $deposito):float 
     {
         if($deposito == 0)
         {
@@ -109,7 +109,7 @@ class Conta{
             $contaDestino = $this->depositar($contaDestino);
         }
     }
-    public static function validarnome(string $nomedoTitular):string
+    public static function validarNome(string $nomedoTitular):string
     {
         if(strlen($nomedoTitular) < 5)
         {
