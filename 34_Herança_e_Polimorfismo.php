@@ -97,20 +97,24 @@ class Conta{
         }else{
             $deposito += $this->saldo;
         }
-        public function transferir():string
-        
     }
+        public function transferir(float $valor, Conta $contaDestino)
+    {
+        if($valor > $this->saldo)
+        {
+            throw New Exception("Não e Possivel transferir o Valor");
 
-
-
-
+        }else{
+            $this->sacar($valor);
+            $contaDestino = $this->depositar($contaDestino);
+        }
+    }
     public static function validarnome(string $nomedoTitular):string
     {
         if(strlen($nomedoTitular) < 5)
         {
              throw New Exception("o nome deve ter mais que 05 caracteres");
-        }
-        else{
+        }else{
             exit();
         }
     }

@@ -23,16 +23,66 @@ class Conta {
   /*
   *@param setando todos os Metodos:
   */
-  public function sacar(float $valorAsacar)
-  {
-    if($this->saldo > $valorAsacar)
+  public function recuperasaldo():float
     {
-      throw new Exception("Não e Possivel sacar o valor",1);
-    }//parei aqui.
-  }
-  
-  
-}
+        return $this->saldo;
+    }
+    public function recuperacpf():float 
+    {
+        return $this->cpfTitular;
+    }
+    public function recuperanome():float 
+    {
+        return $this->nomeTitular;
+    }
+    public function sacar(float $valorAsacar):float 
+    {
+        if($valorAsacar > $this->saldo)
+        {
+            throw New Exception("Não e Possivel Sacar o valor!!");
+        }else if($valorAsacar == 0)
+        {
+            throw New Exception("O valor a Sacar não pode ser o Numero 0");
+        }else{
+            $valorAsacar -=$this->saldo;
+        }
+    }
+    public function depositar(float $deposito):float 
+    {
+        if($deposito == 0)
+        {
+            throw New Exception("O deposito Precisa possuir um valor e não podera ser zero!!");
+
+        }else if($deposito < 0 )
+        {
+            throw New Exception("O Numero Preisa ser Positivo!!");
+
+        }else{
+            $deposito += $this->saldo;
+        }
+    }
+        public function transferir(float $valor, Conta $contaDestino)
+    {
+        if($valor > $this->saldo)
+        {
+            throw New Exception("Não e Possivel transferir o Valor");
+
+        }else{
+            $this->sacar($valor);
+            $contaDestino = $this->depositar($contaDestino);
+        }
+    }
+    public static function validarnome(string $nomedoTitular):string
+    {
+        if(strlen($nomedoTitular) < 5)
+        {
+             throw New Exception("o nome deve ter mais que 05 caracteres");
+        }else{
+            exit();
+        }
+    }
+}    
+
 /*
 *@param setando uma classe nova Endereco, com os respectivos atributos;
 *@param atribuindo valores atribuição;
