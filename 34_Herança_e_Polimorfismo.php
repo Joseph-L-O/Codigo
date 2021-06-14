@@ -5,8 +5,6 @@
  * @param Criação da Classes;
  */
 class endereco 
-// Classe Endereco:
-
 {
     private $cidade;
     private $bairro;
@@ -41,8 +39,4 @@ public function __Construct(string $cidade, string $bairro , string $rua , strin
     {
         return $this->numero;
     }
-
-/**
- * @param Criando a Classe Conta para acessar os Metodos
- */
 }
