@@ -3,19 +3,16 @@
  * @param primeiro vou criar a classe conta;
  * @param atributos setados
  */
-
  class Conta{
    private $saldo;
    private $cpfTitular;
    private $nomeTitular;
    public static $numerodecontas;
-
    public function __Construct(float $saldoconta, string $cpfdoTitular, string $nomedoTitular)
    {
        $this->saldo = $saldoconta;
        $this->cpfTitular = $cpfdoTitular;
        $this->nomeTitular = $nomedoTitular;
-       
        Conta::$numerodecontas++;
    }
    public function recuperarsaldo():float
@@ -118,7 +115,4 @@
  echo ucwords("Nome do Titular da Conta: ").$primeiraconta->recuperarnome()."<br>";
  echo ucwords("Numero do CPF do Titular: ").$primeiraconta->recuperarcpf()."<br>";
  echo "<hr>";
- 
- 
-
 ?>
