@@ -6,8 +6,6 @@
 class Conta
 {
     private $saldo = 0;
-
-    
     public function depositar(float $valor)
     {
         if($valor < 0)
@@ -17,8 +15,6 @@ class Conta
         }
         $this->saldo += $valor;
     }
-    
-
     public function sacar(float $valor)
     {
         if($valor < 0)
@@ -30,13 +26,10 @@ class Conta
         }
         $this->saldo += $valor;
     }
-      
     public function consultasaldo(): float 
-    
     {
         return $this->saldo;
     }
-
     public function transferir(float $valor, Conta $contadestino)
     {
         if($valor < 0){
@@ -47,8 +40,5 @@ class Conta
         $contadestino->depositar($valor);
         $this->saldo -= $valor;
     }
-
 }
-
-
 ?>
