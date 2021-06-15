@@ -6,8 +6,8 @@ $contascorrentes = [
     "341.654.456-90" => ['titular'=> 'Vulgo_Pato','Saldo'=>100]
 ];
 /**
- * Adicionando Valores
- * Subtraindo e adicionando valores na programação procedural.
+ * @param ContasCorrentes;
+ * @param Atualização na programação Procedural
  */
 
 $contascorrentes["123.456.774-56"]['Saldo']-=1000; 
@@ -21,10 +21,8 @@ if(500 > $contascorrentes["341.654.456-90"]['Saldo'])
 else{
     $contascorrentes["341.654.456-90"]['Saldo']-=500;
 }
-
 $valor  = $contascorrentes;
 foreach($valor as $cpf => $contas){
     echo ucfirst("<strong> Nome do Titular da Conta:</strong>"). "  " . $contas['titular']." "."<br>".ucfirst("N° CPF: ").$cpf." " ."<br>".ucfirst("Ganha Quanto em R$: ").$contas['Saldo']." "."<br>";
 }
-
 ?>
