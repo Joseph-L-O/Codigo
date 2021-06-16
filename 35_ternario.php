@@ -83,7 +83,6 @@ echo $A6 == '1'?'0':
 <br>
 <hr>
 <h3 id="result2"> Resultado do if ternario projeto karstem Remessa: <?php
-
 $J6 = '3';
 echo $J6 == '1'?'0':
 ($J6 == '2' ?  '5' :
@@ -103,7 +102,6 @@ echo $J6 == '1'?'0':
 ($J6 == '20' ? '5' :
 ($J6 == '21' ? '9' : " ")))))))))))))))); 
 ?> <br></h3>
-
 <br>
 <hr>
 <h3 id="result3"> Resultado do if ternario projeto Karstem Retorno: 
