@@ -1,34 +1,43 @@
 <?php
 
-include_once 'CustomDAO.php';
+include_once 'CustomDAO.php'; // incluindo o arquivo CustomDAO.php
 
-$dao = new CustomDAO();
-$dao->begin();
-global $output_tmp;
+$dao = new CustomDAO();   // Instanciando a Classe;
+$dao->begin();  // $objeto $dao inicia
+global $output_tmp;   // pega a variavel global do finnetmap
 
-foreach($output_tmp->lines as $k => $item) {
+foreach($output_tmp->lines as $k => $item) {  // faz um foreach (Para cada $output_tmp->lines como $k => $item) pega a variavel Lines e transforma a Key e a Velue
     
-    $segmento = $output_tmp->registros[$k];
+    $segmento = $output_tmp->registros[$k];   //segmento recebe $output->atributo registros, passando o [$k] que armazena $lines.
 
-    if($segmento == 'HARQ'){
+    if($segmento == 'HARQ'){ //condiçao (se $segmento == 'HARQ') Header de arquivo
 
-        $headerArquivo = serialize($output_tmp->lines[$k]);
+        $headerArquivo = serialize($output_tmp->lines[$k]); //$header de arquivo recebe: serialize() registra no banco de dados conforme as tags do finnetmap (SQLyog)
     }
 
-    if($segmento == 'HLOT'){
+    if($segmento == 'HLOT'){  
+     // $segmento == 'HLOT' 
 
         $headerLote = serialize($output_tmp->lines[$k]);
+        //$headerLote recebe serialize($output_tmp->lines[$k]); registra no banco de dados conforme as tags finnetmap (SQLyog)
     }
 
-    if($segmento == 'SEGT'){
+    if($segmento == 'SEGT'){ 
+     // se variavel $segmento == 'SEGT'  
 
-        $flagSegT = false;
+        $flagSegT = false;  
+        // variavel flagSegT recebe um bolleano False
 
         $cnpjAncora = substr($output_tmp->lines[$k]['T24'], 1, 14);
+        //$cnpjAncora recebe um substr( $output_tmp->lines[$k]['T24'], 1, 14); pega T24 apartir da 1 posição com tamanho de 14. 
 
         Logger::getInstance()->write(LOG_INFO, '###########'.substr($cnpjAncora, 0, -6));
+        // exibe como resultado, #########, mostra e pega o $cnpjAncora, 0, -6 os seis utimos da variavel
         
-        if($output_tmp->lines[$k]['T7'] == '02' && $dao->consultaCNPJ($cnpjAncora)){
+        if($output_tmp->lines[$k]['T7'] == '02' && $dao->consultaCNPJ($cnpjAncora)){ 
+        /*validação, se $output_tmp->lines[$k]['T7] == '02' && $dao ($dao = new CustomDAO(); Instanciando a Classe;
+        -> consultaCNPJ($cnpjAncora) passando cpnpj ancora.
+        */
 
             Logger::getInstance()->write(LOG_INFO, '###########'.$cnpjAncora);
             $reference = $output_tmp->lines[$k]['T15'];
