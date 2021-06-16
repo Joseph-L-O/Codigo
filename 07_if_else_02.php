@@ -8,6 +8,7 @@ $numero_de_pessoas = 2;
 $signo = "Libra";
 echo ucwords("Voce pode entrar na festa se tiver apartir de 18 anos ou ");
 echo ucwords("A partir de 16 anos acompanhado <br>");
+
 if($idade >= 18){
     echo ucwords("Você tem a ").$idade." Você pode entrar na festa tranquilamente!! <br>";
 }else{

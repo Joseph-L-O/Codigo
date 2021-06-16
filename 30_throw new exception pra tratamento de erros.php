@@ -2,6 +2,7 @@
 /**
  * @param Utilizando throw New Exeception;
  */
+
 class Conta
 {
     private $saldo = 0;
@@ -40,5 +41,4 @@ class Conta
         $this->saldo -= $valor;
     }
 }
-
 ?>

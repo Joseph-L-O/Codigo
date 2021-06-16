@@ -10,12 +10,10 @@
    public static $numerodecontas;
    public function __Construct(float $saldoconta, string $cpfdoTitular, string $nomedoTitular)
    {
-    
        $this->saldo = $saldoconta;
        $this->cpfTitular = $cpfdoTitular;
        $this->nomeTitular = $nomedoTitular;
        Conta::$numerodecontas++;
-    
    }
    public function recuperarsaldo():float
    {
@@ -107,9 +105,11 @@
         return $this->numero;
     }
 }
+
 /**
  * @param Instanciando classe
  */
+
  $primeiraconta = new Conta("100", "237.216.498.78", "Andre Panizza dos Santos");
  echo ucwords("O saldo da conta R$:  ").$primeiraconta->recuperarsaldo()."<br>";
  echo ucwords("Nome do Titular da Conta: ").$primeiraconta->recuperarnome()."<br>";
