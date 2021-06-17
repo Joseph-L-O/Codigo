@@ -8,12 +8,8 @@ $con = $mysqli->query($consulta) or die($mysqli->error);
 /**
  * @var Criação de lista de constantes:
  */
-        $var1 = ucwords("<b> N° </b>");
-        $var2 = ucwords("<b> nome Completo</b> ");
-        $var3 = ucwords("<b> endereco Completo </b>");
-        $var4 = ucwords("<b> telefone Celular </b>");
-        $var5 = ucwords("<b> email Fixo </b>");
-/**
+        const text = array('N°','Nome Completo','Endereco','telefone fixo','email oficial');
+ /**
  * @param While $dado = $con->fetch_array()){
  * @param Essa função pega todos os dados da minha tabela
  * @param e armazena na variavel $dado;
@@ -21,7 +17,6 @@ $con = $mysqli->query($consulta) or die($mysqli->error);
  * @param 
  */
 ?>
-
 <!DOCTYPE html>
 <head>
     <meta charset="utf-8">
@@ -36,11 +31,11 @@ $con = $mysqli->query($consulta) or die($mysqli->error);
     <main>
     <table #id="borda">
         <tr>
-            <td><?php echo $var1;?></td>
-            <td><?php echo $var2;?></td>
-            <td><?php echo $var3;?></td>
-            <td><?php echo $var4;?></td>
-            <td><?php echo $var5;?></td>
+            <td><?php echo text[0];?></td>
+            <td><?php echo text[1];?></td>
+            <td><?php echo text[2];?></td>
+            <td><?php echo text[3];?></td>
+            <td><?php echo text[4];?></td>
             <td><?php echo ucwords("<b> ações: </b>") ?></td>
         </tr><!--//dentro do while eu vou criar uma variavel que vou puxar do banco de dados -->
         <?php while($dado = $con->fetch_array()){  ?>
