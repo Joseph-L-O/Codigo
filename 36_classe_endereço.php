@@ -21,8 +21,7 @@
    {
     return this->endereco;
    }
-  
-  
+   
    public function recuperarsaldo():float
    {
        return $this->saldo;
@@ -113,7 +112,6 @@
         return $this->numero;
     }
 }
-
 /**
  * @param Instanciando classe
  */
