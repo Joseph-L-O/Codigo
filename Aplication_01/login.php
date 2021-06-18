@@ -9,7 +9,9 @@
 <link rel="preload"  title="auto-load-page" alt="none">
 <script type="text/javascript" src="/Aplication_01/script/"></script>
 </head>
-<body>
-inicio da pagina principal  
-<html>  
+<body id="corpo">
+  
+inicio da pagina principal
+  
+<body>  
 </html>
