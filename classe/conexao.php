@@ -13,6 +13,8 @@ $mysqli = new mysqli($host, $root, $senha, $bd);
  */
 if($mysqli->connect_errno)
 echo "falha na conexão: (". $mysqli->connect_errno.") ".$mysqli->connect_errno;
+//conexão com o Banco de dados
+//https:localhost:8080/phpmyadimn/
 
 
 

@@ -7,14 +7,21 @@
    private $saldo;
    private $cpfTitular;
    private $nomeTitular;
+   private $endereco;
    public static $numerodecontas;
-   public function __Construct(float $saldoconta, string $cpfdoTitular, string $nomedoTitular)
+   public function __Construct(float $saldoconta, string $cpfdoTitular, string $nomedoTitular, Endereco $endereco)
    {
        $this->saldo = $saldoconta;
        $this->cpfTitular = $cpfdoTitular;
        $this->nomeTitular = $nomedoTitular;
+       $this->endereco = $endereco;
        Conta::$numerodecontas++;
    }
+   public function recuperarEnderecoClass()
+   {
+    return this->endereco;
+   }
+   
    public function recuperarsaldo():float
    {
        return $this->saldo;
@@ -105,7 +112,6 @@
         return $this->numero;
     }
 }
-
 /**
  * @param Instanciando classe
  */
