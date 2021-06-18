@@ -10,6 +10,9 @@
 <script type="text/javascript" src="/Aplication_01/script/"></script>
 </head>
 <body id="corpo">
+  <!-- testando uma div -->
+  <div id="box-1"></div>
+
   
 inicio da pagina principal
   
