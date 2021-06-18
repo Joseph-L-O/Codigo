@@ -8,3 +8,13 @@
 body #corpo {
     background-color:bisque;
 }
+
+#box-1{
+    width:300px;
+    height:300px;
+    shadow:1px;
+    transparence:0px;
+    border:1px;
+    background-color:orange;
+ }
+
