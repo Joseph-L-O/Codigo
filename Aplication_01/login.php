@@ -7,8 +7,5 @@
 <link rel="shortcut icon" href="/WebRoot/Store/Shops/......./MediaGallery/favicon.ico" type="image/x-icon"/>
 <link rel="author" href="./src/author.php">
 <script type="text/javascript" src="/Aplication_01/script/"></script>
-
 </head>
-
-
 </html>
