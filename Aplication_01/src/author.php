@@ -5,4 +5,6 @@ function textos($text3){
     $text3 = $text1.$text2;
 }
 
+echo textos();
+
 ?>
