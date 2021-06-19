@@ -2,5 +2,5 @@
 var nome = "Seja muito bem Vindo a Pagina de Cadatramento";
 var valor = 0;
 
-Document.alert(nome);
+alert(nome);
 /* message alert the site */
