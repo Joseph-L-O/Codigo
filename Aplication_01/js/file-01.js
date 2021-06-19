@@ -1,3 +1,5 @@
 /*codigo javascript para pagina */
-alert.console.log("Bem vindo a pagina de cadastramento");
-/*message alert/*
+var nome = "Muito bem vindo";
+console.log("Bem vindo a pagina de cadastramento");
+alert()
+/* message alert the site */
