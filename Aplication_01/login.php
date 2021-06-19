@@ -25,8 +25,6 @@
         </article>
     </main>
     <footer>
-    </footer>  
-    rodape da minha pagina
-    
+    </footer>          
   </body>
 </html>
