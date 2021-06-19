@@ -20,12 +20,13 @@
 
 
 
+                                
             </div>
         </article>
     </main>
     <footer>
-
     </footer>  
+    rodape da minha pagina
     
   </body>
 </html>
