@@ -1,4 +1,8 @@
 <?php
+/**
+ * @internal incluindo meu arquivo de conexão com o Banco:
+ */
+include_once("./php/connectedBD.php");
 ?>
 
 <!DOCTYPE html>
@@ -16,8 +20,16 @@
   <body id="corpo-1">
     <main>
         <article>
-            <div id="box-1"><h2 id="title-0"> BEM VINDO </h2></div>
-            <div id="box-2"><h3 id="forms-1" name="titulo formulario"> Cadastro de Clientes </h3></div>
+            <div id="box-1"><h2 id="title-0"> BEM VINDO AO BANCO DO ANDRE </h2></div>
+            <div id="box-2"><h3 id="forms-1" name="titulo formulario"> Cadastro de Clientes </h3>
+            <form method="POST" action=""> <!--Criado um Metodo de envio POST, sem action ainda-->
+            <input id="input-0" type="text" name="primeiro label">
+            <input id="input-1" type="text" name="segundo label">
+            <!--Acima forma criados 02 Labels com 02 IDs --> 
+
+            
+            
+            </div>
 
 
                 
