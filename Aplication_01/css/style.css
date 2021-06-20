@@ -3,7 +3,11 @@
     text-decoration:none;
 }
 #corpo-1{
+<<<<<<< HEAD
     background-color:black;
+=======
+    background-color:purple;
+>>>>>>> 820d14785dc4c26db6ce1144c065ea3009f04714
 }
 /*css do titulo:*/
 #title-0{
