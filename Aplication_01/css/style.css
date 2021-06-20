@@ -49,24 +49,3 @@
     text-align: center;
     font-size: inherit;
 }
-
-
-/*atributo do input title-0*/
-
-p #input0 {
-    border-radius: 2px;
-}
-
-
-/*atributo do input title-2 */
-
-p #input1 {
-    border-radius: 2px;
-}
-
-a #linkhref1 {
-    text-decoration: none;
-    text-align: justify;
-    font-family: arial;
-    color: green;
-}
