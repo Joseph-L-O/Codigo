@@ -15,7 +15,7 @@
     <main>
         <article>
             <div id="box-1"><h2 id="title-0"> BEM VINDO </h2></div>
-            <div id="box2">
+            <div id="box-2"></div>
                 <h3 id="forms-1" name="titulo formulario"> Cadastro de Clientes </h3>
 
 
