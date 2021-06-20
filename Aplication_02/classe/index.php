@@ -9,7 +9,7 @@ $con = $mysqli->query($consulta) or die($mysqli->error);
  * @var Criação de lista de constantes:
  */
         const text = array('N°','Nome Completo','Endereco','telefone fixo','email oficial');
- /**
+ /**                        0       1             2          3       4      5      6
  * @param While $dado = $con->fetch_array()){
  * @param Essa função pega todos os dados da minha tabela
  * @param e armazena na variavel $dado;
@@ -20,8 +20,8 @@ $con = $mysqli->query($consulta) or die($mysqli->error);
 <!DOCTYPE html>
 <head>
     <meta charset="utf-8">
-    <link rel="shortcut icon" href="/Projeto_/classe/img/favi_icon1.png">
-    <link rel="stylesheet" type="text/css" href="/Projeto_/style/style.css" media="screen">
+    <link rel="shortcut icon" href="./img/favi_icon1.png">
+    <link rel="stylesheet" type="text/css" href="../style/style.css" media="screen">
     
 </head>
 <body>
@@ -29,7 +29,7 @@ $con = $mysqli->query($consulta) or die($mysqli->error);
      cabeçalho da Pagina
     </header>
     <main>
-    <table #id="borda">
+    <table>
         <tr>
             <td><?php echo text[0];?></td>
             <td><?php echo text[1];?></td>
@@ -41,8 +41,8 @@ $con = $mysqli->query($consulta) or die($mysqli->error);
         <?php while($dado = $con->fetch_array()){  ?>
             <!-- A variavel dados que recebe a variavel $con = $mysqli->query($consulta) que contem $consulta--> 
     </table>
-    <table border="1">
-        <tr>
+    <table>
+        <tr >
             <td><?php echo $dado["codigo"];?></td>
             <td><?php echo $dado["nome"]; ?></td>
             <td><?php echo $dado["adress"];?></td>
