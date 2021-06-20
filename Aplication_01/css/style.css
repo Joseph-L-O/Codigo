@@ -63,3 +63,8 @@
 #input1 {
     border-radius: 2px dashed black;
 }
+a #linkhref1 {
+    text-decoration:blue;
+    text-align:justify;
+    font-family:arial;
+}
