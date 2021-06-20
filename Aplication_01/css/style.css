@@ -53,18 +53,20 @@
 
 /*atributo do input title-0*/
 
-#input0 {
-    border-radius: 2px dashed black;
+p #input0 {
+    border-radius:2px;
 }
 
 
 /*atributo do input title-2 */
 
-#input1 {
-    border-radius: 2px dashed black;
+p #input1 {
+    border-radius:2px;
 }
 a #linkhref1 {
-    text-decoration:blue;
+    text-decoration:none;
     text-align:justify;
     font-family:arial;
+    color:green;
 }
+
