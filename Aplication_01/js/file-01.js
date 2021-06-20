@@ -1,5 +1,5 @@
 /*codigo javascript para pagina */
-var nome = "Seja muito bem Vindo a Pagina de Cadatramento";
+var nome = "Teste de Pagina";
 var valor = 0;
 
 alert(nome);
