@@ -30,7 +30,8 @@ include_once("./php/connectedBD.php");
                 <p><input  placeholder="Password" type="password"  alt="alternate" name="senha"></p>
                 <br>
                 <!--Acima forma criados 02 Labels com 02 IDs -->
-                <p><a id="fogout-password" href="#"> Esqueceu sua senha </a></p>
+                <div id=" senha01 "><p><a id="fogout-password" href="#"> Esqueceu sua senha</a></p></div>
+               
                 <br>
                 <span><input class="botao" type="button" value="Entrar"></span>
                 <span><input class="botao" type="button" value="Limpar"><span>

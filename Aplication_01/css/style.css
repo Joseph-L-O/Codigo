@@ -25,11 +25,13 @@
 /*css da div do topo: faça login do sistema*/
 
 #box-1 {
-    width: 1370px;
+    width: 100%;
     height: 50px;
     background-color: bisque;
     padding-top: 11px;
     padding-left: 19px;
+    padding-bottom: 10px;
+    /*espaçamento interno da div quanto que ele vai recurar internamente*/
 }
 
 
@@ -40,7 +42,7 @@
     left: 29px;
     right: 15px;
     padding-top: 25px;
-    width: 1370px;
+    width: 300px;
     height: 100px;
 }
 
@@ -60,18 +62,21 @@
     /*Sobe um pouco o texto: Faça Login no sistema*/
 }
 
+#senha01 {
+    text-align: center;
+}
+
 #fogout-password {
+    margin-left: 20px;
+    /*muda o esqueceu a senha de posição*/
     padding: 1 2 3px;
     /*Espaçamento 1px acima e abaixo, esquerda e direita  do conteudo*/
-    scroll-padding-top: 2px;
-    /*adicona espaçamento entre */
-    padding-bottom: 2px;
-    padding-top: 2px;
+    color: whitesmoke;
 }
 
 html {
     scroll-behavior: smooth;
-    /*Aqui eu Crei o efeito de rolagem da minha pagina*/
+    /*Aqui eu Crie o efeito de rolagem da minha pagina*/
 }
 
 
@@ -101,8 +106,8 @@ html {
 .botao {
     padding: 8px 16px;
     /*-> O Padding 4px 11px determina que o conteudo do span ficara com 4px de 
-                           espaço acima e abaixo do contéudo, e 11px em cada lateral. se quiser
-                           mais estreito diminua os valores */
+espaço acima e abaixo do contéudo, e 11px em cada lateral. se quiser
+mais estreito diminua os valores */
     border: 2px solid #ffcc00;
     /*O border Terá 1 pixel de espessura, sera solido, e cor hexadecimal*/
     -moz-border-radius: 8px;
@@ -136,12 +141,14 @@ html {
     /*É responsavel pelas sobras do Span a primeira parte se aplica ao topo do span, a segunda a Base*/
     box-shadow: inset 0 1px 1px #fff, 0 2px 3px #666;
     /*O inset determina que a sobra sera criada em direção ao interior do elemento com direcionamento de 0 na lateral e 1 px na vertical, com desfoque de 1pixels na cor branca.
-    Na parte inferiror do elemento, a sobra será para fora  e tom de cinza #666 */
+Na parte inferiror do elemento, a sobra será para fora  e tom de cinza #666 */
     cursor: pointer;
     /*Determina que ao passar o mouse sobre o elemento o cursor do mouse se transforma numa maozinha*/
     position: relative;
     /*Da ao elemento uma posição fixa em relação ao seu elemento Pai, normalmente a div que a contem.*/
     transition-duration: 3ms;
+    margin-right: 10px;
+    /*da  uma margin na direita de cada um dos itens dessa classe */
 }
 
 
