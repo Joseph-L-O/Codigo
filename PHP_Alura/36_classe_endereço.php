@@ -43,8 +43,9 @@ class Conta
  * @return bool informa se o saque foi efetuado com sucesso.
  */
 
-  public function Sacar(float $valor):bool
-  {
+
+public function Sacar(float $valor):float
+    {
       try{
           if($valor <= 0)
           {
@@ -58,7 +59,24 @@ class Conta
         }catch(Exception $e){
             echo $e->getMessage();
         }return false;
+    }
 
-      }
-     
-  }
+    public function Depositar(float $deposito):float
+    {
+
+    try {
+        if($deposito < 0){
+            throw new Exception("O valor não pode ser negativo");
+        }else if($deposito == 0)
+            {
+            throw new Exception("O valor não pode ser Zerado pra deposito");
+            }
+        $deposito += $this->saldo;
+        return true;
+        }catch(Exception $e){
+            echo $e->getMessage();
+        }return false;
+
+} //fim do metodo.
+
+} // fim da classe

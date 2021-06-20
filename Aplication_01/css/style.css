@@ -9,13 +9,12 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Pangolin&display=swap');
 
-/*css do titulo:*/
+/*css do titulo: BEM VINDO AO BANCO DO ANDRE*/
 
 #title-0 {
     color: red;
     font-size: 20px;
     text-align: center;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', 'Arial', 'sans-serif';
     font-weight: bolder;
     padding-top: 10px;
     padding-left: 5px;
@@ -23,20 +22,24 @@
 }
 
 
-/*css da div do topo*/
+/*css da div do topo: faça login do sistema*/
 
 #box-1 {
     width: 1370px;
     height: 50px;
-    background-color: saddlebrown;
-    padding-top: 10px;
-    padding-left: 5px;
+    background-color: bisque;
+    padding-top: 11px;
+    padding-left: 19px;
 }
 
 
 /*css da div meia topo*/
 
 #box-2 {
+    position: absolute;
+    left: 29px;
+    right: 15px;
+    padding-top: 25px;
     width: 1370px;
     height: 100px;
 }
@@ -45,7 +48,123 @@
 /*atributo do titulo cadastro de clientes*/
 
 #forms-1 {
-    color: slateblue;
-    text-align: center;
+    position: absolute;
+    /*Posição absoluta*/
+    left: 0.5px;
+    right: 0.5px;
+    /*Move para a Direita*/
+    color: whitesmoke;
     font-size: inherit;
+    font-weight: bold;
+    margin-bottom: 25px;
+    /*Sobe um pouco o texto: Faça Login no sistema*/
+}
+
+#fogout-password {
+    padding: 1 2 3px;
+    /*Espaçamento 1px acima e abaixo, esquerda e direita  do conteudo*/
+    scroll-padding-top: 2px;
+    /*adicona espaçamento entre */
+    padding-bottom: 2px;
+    padding-top: 2px;
+}
+
+html {
+    scroll-behavior: smooth;
+    /*Aqui eu Crei o efeito de rolagem da minha pagina*/
+}
+
+
+/*Aparecimento gradual de um elemento ao carregar a pagina */
+
+.isanime {
+    animation: insanimein 1s linear;
+    /*Essa propriedade vai configurar a animação, dar um nome a ela e determinar a sua duração */
+    @keyframes insanimein {
+        /*O Keyframes vai determinar o estado do meu objeto sendo (from) o estado inicial e (to) seu estado final*/
+        0% {
+            opacity: 0;
+        }
+        50% {
+            opacity: 0.5;
+        }
+        100% {
+            opacity: 1;
+        }
+        /*Definido com as porcentagens*/
+    }
+}
+
+
+/* Criação de Uma Classe para todos os Botões da Pagina*/
+
+.botao {
+    padding: 8px 16px;
+    /*-> O Padding 4px 11px determina que o conteudo do span ficara com 4px de 
+                           espaço acima e abaixo do contéudo, e 11px em cada lateral. se quiser
+                           mais estreito diminua os valores */
+    border: 2px solid #ffcc00;
+    /*O border Terá 1 pixel de espessura, sera solido, e cor hexadecimal*/
+    -moz-border-radius: 8px;
+    /*esse atributo Determina o funcionamento para o Mozilla Fire Fox*/
+    -webkit-border-radius: 8px;
+    /*esse atributo garante o funcionamento pra varios navegadores*/
+    border-radius: 8px;
+    /*Determina quanto arredondado sera, neste caso sera 8 pixels em cada canto*/
+    background-color: #ffab02 !important;
+    /*background-color: Determina a cor de fundo dos elementos*/
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #ffcc00), color-stop(100%, #ff6600)) !important;
+    /*webkit(chomme e Safari), Moz(Mozilla FireFox) garante o funcionamento*/
+    background: -webkit-linear-gradient(top, #ffcc00, #ff6600) !important;
+    /*garantira o funcionamento dos Navagadores*/
+    background: -moz-linear-gradient(top, #ffcc00, #ff6600) !important;
+    /*garantira o funcionamento dos Navagadores*/
+    background: -ms-linear-gradient(top, #ffcc00, #ff6600) !important;
+    /*garantira o funcionamento dos Navagadores*/
+    background: -o-linear-gradient(top, #ffcc00, #ff6600) !important;
+    /*garantira o funcionamento dos Navagadores*/
+    /*        Garantira o Funcionamento nos navegadores (Opera, Mozilla Fire Fox, Chrome e Safari) abaixo:           */
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#ffcc00', endColorstr='#ff6600', GradientType=0);
+    background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2ZmY2MwMCIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNmZjY2MDAiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+    font-family: "Segoe UI";
+    /*este e o tipo de fonte usada no botão*/
+    font-weight: bold;
+    /*  Determina se o peso da Fonte mo caso Bold(tipo negrito)  */
+    color: #fff;
+    /*Esta com a cor da fonte dentro do botão, neste caso cor Branca ou white */
+    text-shadow: 0 1px 0 #666;
+    /*É responsavel pelas sobras do Span a primeira parte se aplica ao topo do span, a segunda a Base*/
+    box-shadow: inset 0 1px 1px #fff, 0 2px 3px #666;
+    /*O inset determina que a sobra sera criada em direção ao interior do elemento com direcionamento de 0 na lateral e 1 px na vertical, com desfoque de 1pixels na cor branca.
+    Na parte inferiror do elemento, a sobra será para fora  e tom de cinza #666 */
+    cursor: pointer;
+    /*Determina que ao passar o mouse sobre o elemento o cursor do mouse se transforma numa maozinha*/
+    position: relative;
+    /*Da ao elemento uma posição fixa em relação ao seu elemento Pai, normalmente a div que a contem.*/
+    transition-duration: 3ms;
+}
+
+
+/*Outros atributos de Efeitos abaixo:*/
+
+.botao:hover {
+    box-shadow: inset 0 3px 5px rgb(247, 245, 245), 0 3px 4px rgb(73, 51, 51);
+    /*O box-shadow mudou, O efeito de brilho branco ficam diferentes, maior e mais espalhado*/
+    background: -webkit-gradient(linear, left top, left bottom, from(#ffcc00), to(#ff6600)) !important;
+    transform: scale(1.1);
+}
+
+.botao:active {
+    box-shadow: inset 1 2px 5px #fff, 0 1px 3px #666 !important;
+    /*Botaão ao ser clicado com efeitos do seletor:active*/
+    top: 2px
+}
+
+.botao a,
+.botao a:active,
+.botao a:hover,
+.botao a:visited {
+    text-decoration: none;
+    color: #fff;
+    text-shadow: 0 1px 0 #666;
 }

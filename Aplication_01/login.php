@@ -3,6 +3,7 @@
  * @internal incluindo meu arquivo de conexão com o Banco:
  */
 include_once("./php/connectedBD.php");
+
 ?>
 
 <!DOCTYPE html>
@@ -22,13 +23,20 @@ include_once("./php/connectedBD.php");
       <article>
       <div id="box-1"><h2 id="title-0"> BEM VINDO AO BANCO DO ANDRE </h2></div>
          <div id="box-2"><h3 id="forms-1" name="titulo formulario"> FAÇA LOGIN NO SISTEMA </h3>
-              
+         <br><br>              
              <form method="POST" action=""> <!--Criado um Metodo de envio POST, sem action ainda-->
                 <p><input  placeholder="Email" type="text"  name="email"></p>
+                <br>
                 <p><input  placeholder="Password" type="password"  alt="alternate" name="senha"></p>
+                <br>
                 <!--Acima forma criados 02 Labels com 02 IDs -->
-                <p><a href=""> Esqueceu sua senha </a></p>
-                <p><input type="button" value="Entrar"></p>
+                <p><a id="fogout-password" href="#"> Esqueceu sua senha </a></p>
+                <br>
+                <span><input class="botao" type="button" value="Entrar"></span>
+                <span><input class="botao" type="button" value="Limpar"><span>
+                <br>
+                <!--Foi criado um Botão personalizado com efeito para enviar as informações -->
+                <!--Foi adicionado uma classe para atender todos os padrãoes -->
             </form>
           </div>
        </div>
