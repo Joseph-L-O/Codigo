@@ -25,7 +25,8 @@ include_once("./php/connectedBD.php");
             <form method="POST" action=""> <!--Criado um Metodo de envio POST, sem action ainda-->
             <input id="input-0" type="text" name="primeiro label">
             <input id="input-1" type="text" name="segundo label">
-            <!--Acima forma criados 02 Labels com 02 IDs --> 
+            <!--Acima forma criados 02 Labels com 02 IDs -->
+             
                        
             
             </div>
