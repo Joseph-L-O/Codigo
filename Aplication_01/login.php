@@ -25,7 +25,7 @@ include_once("./php/connectedBD.php");
               
              <form method="POST" action=""> <!--Criado um Metodo de envio POST, sem action ainda-->
                 <p><input id="input-0" placeholder="Email" type="text"  name="email"></p>
-                <p><input id="input-1" type="password"  alt="alternate" name="senha"></p>
+                <p><input id="input-1" placeholder="Password" type="password"  alt="alternate" name="senha"></p>
                 <!--Acima forma criados 02 Labels com 02 IDs -->
                 <p><a id="linkhref1" href=""> Esqueceu sua senha </a></p>
                 <p><input type="button" value="Entrar"></p>
