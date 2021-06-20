@@ -33,10 +33,11 @@ class CustomDAO
             return false;
          }
     }
+    // passa como parametro todos esses
     public function insereRegistros($reference, $headerArquivo, $headerLote, $segmentoT, $segmentoU, $traillerLote, $traillerArquivo) {
-
+    // cria a variavel SQL
     $sql = "INSERT INTO santander_confirming_cobrancas (reference, header_arquivo, header_lote, segmento_t, segmento_u, trailler_lote, trailler_arquivo) VALUES (?, ?, ?, ?, ?, ?, ?)";
-
+     // Executa $eSQL dentro do array
     $eSql = $this->con->Execute($sql, array($reference, $headerArquivo, $headerLote, $segmentoT, $segmentoU, $traillerLote, $traillerArquivo));
 
     }

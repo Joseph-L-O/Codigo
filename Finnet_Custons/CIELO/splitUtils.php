@@ -33,6 +33,7 @@ class splitUtils
             if (substr($linhas, 0, 1) != '0' && substr($linhas, 0, 1) != '9') {
                 if (!in_array(substr($linhas, 1, 10), $codEstabelecimentos)) {
                     $codEstabelecimentos[] = substr($linhas, 1, 10);
+                    
                 }
             }
         }
@@ -69,5 +70,8 @@ class splitUtils
         $traillerArq = str_pad($traillerArq, 250, ' ', STR_PAD_RIGHT) . "\n";
 
         return $traillerArq;
+        /*
+        *@return adiciona um split;
+        */
     }
 }

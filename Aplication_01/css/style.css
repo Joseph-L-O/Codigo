@@ -6,6 +6,10 @@
     background-color:orange;
     
 }
+@import url('https://fonts.googleapis.com/css2?family=Pangolin&display=swap');
+    
+
+
 /*css do titulo:*/
 #title-0{
     color:red;
@@ -34,7 +38,7 @@
 #forms-1 {
     color: slateblue;
     text-align:center;
-    box-sizing: border-box;
+    
 
 }
 
