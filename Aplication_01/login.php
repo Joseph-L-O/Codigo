@@ -19,27 +19,23 @@ include_once("./php/connectedBD.php");
   </head>
   <body id="corpo-1">
     <main>
-        <article>
-            <div id="box-1"><h2 id="title-0"> BEM VINDO AO BANCO DO ANDRE </h2></div>
-            <div id="box-2"><h3 id="forms-1" name="titulo formulario"> Cadastro de Clientes </h3>
-            <form method="POST" action=""> <!--Criado um Metodo de envio POST, sem action ainda-->
-            <input id="input-0" type="text" name="primeiro label">
-            <input id="input-1" type="text" name="segundo label">
-            <!--Acima forma criados 02 Labels com 02 IDs -->
-             
-                       
-            
-            </div>
-
-
-                
-
-
-                                
-            </div>
-        </article>
-    </main>
-    <footer>
-    </footer>          
+      <article>
+      <div id="box-1"><h2 id="title-0"> BEM VINDO AO BANCO DO ANDRE </h2></div>
+         <div id="box-2"><h3 id="forms-1" name="titulo formulario"> Cadastro de Clientes </h3>
+              
+             <form method="POST" action=""> <!--Criado um Metodo de envio POST, sem action ainda-->
+                <p><input id="input-0" placeholder="Email" "type="text"  name="email"></p>
+                <p><input id="input-1" "type="password"  alt="alternate" name="senha"></p>
+                <!--Acima forma criados 02 Labels com 02 IDs -->
+                <p><a id="linkhref1" href=""> Esqueceu sua senha </a></p>
+                <p><input type="button" value="Entrar"></p>
+            </form>
+          </div>
+       </div>
+     </article>
+   </main>
+<footer>
+  
+</footer>          
   </body>
 </html>
