@@ -11,7 +11,7 @@
 // }
 // for (let i = 0;  i < 4; i++) {
 //     console.log(frutas + foo[i]);
-// }
+// } 
 let sub1 = document.getElementsByClassName('subcontent')
 console.log(sub1)
 let sub1r = true;

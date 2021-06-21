@@ -81,7 +81,7 @@ include_once("./php/connectedBD.php");
           <p><a href="#">Sub Conteúdo</a></p>
         </div>
       </div>
-      <div class="content">
+      <div class="content"> 
         <p><a href="#" onclick="subcontent(3)">Conteúdo</a></p>
         <div id="subcontent4" class="subcontent">
           <p><a href="#">Sub Conteúdo</a></p>
